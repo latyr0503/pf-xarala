@@ -1,0 +1,105 @@
+:root {
+    --colorTitre: #6856AE;
+    --colorSecondary: #666666;
+    --colorblack: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: var(--colorTitre);
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+h1 span {
+    width: 60px;
+    height: 6px;
+    border-radius: 100px;
+    background-color: var(--colorTitre);
+    display: block;
+}
+
+h3 {
+    color: var(--colorSecondary);
+    font-size: 40px;
+    margin-left: 60px;
+
+}
+
+p {
+    color: var(--colorSecondary);
+    font-size: 20px;
+    margin: 20px 0 20px 60px;
+    width: 500px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+button {
+    border: 3px solid var(--colorTitre);
+    font-size: 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+button span {
+    padding: 8px 20px;
+}
+
+button img {
+    width: 50px;
+    height: auto;
+    background-color: var(--colorTitre);
+    padding: 5px;
+    border-radius: 100%;
+}
+
+
+div .img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 5px 5px 20px var(--colorSecondary);
+    margin-right: 40px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+}
+
+.icon {
+    background-color: transparent;
+    padding: 5px;
+    transition: 0.5s linear;
+    border: none;
+}
+.icon:hover {
+    background-color: var(--colorTitre);
+    border-radius: 100px;
+}
+.icon span {
+    font-size: 20px;
+    opacity: 0;
+    color: var(--colorblack);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.icon:hover span {
+    opacity: 1;
+}
+
